@@ -1,7 +1,24 @@
 aid: sh-eco
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/sh-eco.png
 name: sh-eco
-description: sh-eco is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: SH-ECO (翊科聚合物 / Yike Polymer) is a Chinese medical-device materials manufacturer
+  specializing in the research, production, and customized fabrication of medical catheters
+  and membrane materials. Its product range spans single-lumen tubing, multi-lumen tubing,
+  composite/multi-layer tubing, and injection-molded components serving healthcare and
+  multiple industrial applications. The company is a portfolio company of Qiming Venture
+  Partners and was added to the API Evangelist network as a company profile. It publishes
+  a corporate marketing website but exposes no public developer or API surface.
 url: https://raw.githubusercontent.com/api-evangelist/sh-eco/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,15 +28,29 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Medical Devices
+- Materials
+- Manufacturing
+- Healthcare
+- Catheters
+- Polymers
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 common:
+- type: DomainSecurity
+  url: security/sh-eco-domain-security.yml
 - type: Website
   url: https://sh-eco.com.cn
